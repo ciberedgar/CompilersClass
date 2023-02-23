@@ -9,6 +9,7 @@
  *  
  *)
 
+--Stack class that will be used to create the Stack object and handles empty Stack.
 class Stack{
 
 	isNil() : Bool { true }; --True if isNil
@@ -121,9 +122,8 @@ class Main inherits IO {
                fi fi;
                } 
             else if input = "d" then {print_stack(myStack);} --Calls print method
-            else if input = "x" then abort() --Exits the program
             else {myStack <- myStack.push(input);} --Waits for any input
-            fi fi fi fi fi;
+            fi fi fi fi;
          }
          pool;
       }
